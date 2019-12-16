@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>测试滴滴滴 | Hexo</title>
+  <title>Hexo</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -173,28 +173,38 @@
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2019-11-05T14:32:49.000Z" itemprop="datePublished">
-          2019-11-05
+      <time datetime="2019-12-16T05:38:46.256Z" itemprop="datePublished">
+          2019-12-16
       </time>
     
 </span>
-                <h1>测试滴滴滴</h1>
+                <h1></h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		
+      		<h1 id="LeetCode-164-最大间距"><a href="#LeetCode-164-最大间距" class="headerlink" title="LeetCode 164_最大间距"></a>LeetCode 164_最大间距</h1><hr>
+<p>因实验室要求，所以写一下每周算法中的算法题，题是LeetCode中的<a href="https://leetcode-cn.com/problems/maximum-gap/" target="_blank" rel="noopener">第164题，最大间距</a>。</p>
+<h2 id="题目描述和相应的样例"><a href="#题目描述和相应的样例" class="headerlink" title="题目描述和相应的样例"></a>题目描述和相应的样例</h2><p>给定一个无序的数组，找出数组在排序之后，相邻元素之间最大的差值。</p>
+<p>如果数组元素个数小于 2，则返回 0。</p>
+<p>示例 1:</p>
+<p>输入: [3,6,9,1]<br>输出: 3<br>解释: 排序后的数组是 [1,3,6,9], 其中相邻元素 (3,6) 和 (6,9) 之间都存在最大差值 3。<br>示例 2:</p>
+<p>输入: [10]<br>输出: 0<br>解释: 数组元素个数小于 2，因此返回 0。<br>说明:</p>
+<p>你可以假设数组中所有元素都是非负整数，且数值在 32 位有符号整数范围内。<br>请尝试在线性时间复杂度和空间复杂度的条件下解决此问题。</p>
+<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/maximum-gap" target="_blank" rel="noopener">https://leetcode-cn.com/problems/maximum-gap</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
+<h1 id="思路介绍"><a href="#思路介绍" class="headerlink" title="思路介绍"></a>思路介绍</h1><p>最简单的方法我就不再叙述了，就是先排序，再依次比较相邻的元素。</p>
+<p>这里我们主要讲一下最优解，最优解用到了桶排序的思想，关于各种排序，我在查询资料的时候，找到了一篇我认为写的特别好的文章，这里贴一下链接，<a href="https://zhuanlan.zhihu.com/p/68672733?utm_source=qq&amp;utm_medium=social&amp;utm_oi=842390793145696256" target="_blank" rel="noopener">这或许是东半球讲十大排序算法最好的一篇文章</a>。</p>
+<p>为什么说用到了桶排序的思想，此题给定的是无序数组，并且求的是最大间距。我们能将所有数据利用桶排序的思想，放在桶里。比如有10个数，他们的范围是1 ~ 100。我们就创建10个桶，第一个桶存放1 ~ 10，第二个桶存放11 ~ 20，以此类推。把所有的数据放在相应的桶中，现在问题就变得简单了起来。最大间距现在在只可能是两种情况，<strong>第一种情况是一个桶内的最小值和最大值的间距，第二种情况是两个相邻的桶，后一个桶的最小值和前一个桶的最大值的间距。</strong></p>
+<p>思路简单叙述的话就是如上这些，具体代码我就不贴上来了，如有关于代码或者思路上的问题，欢迎联系作者交流。</p>
+<p>qq : 1261557295</p>
+
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
         <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
     
-    <a class="pull-left" href="/2019/11/06/csdn_export_md/" style="float: left;">
-        ← 
-    </a>
     
-    
-    <a class="pull-right" href="/2019/01/18/寒假python100道/">
-        寒假python100道 →
+    <a class="pull-right" href="/2019/11/06/csdn_export_md/">
+         →
     </a>
     
 </nav>
